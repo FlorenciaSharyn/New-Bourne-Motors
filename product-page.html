@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#F2EEE7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-page.css">
+
+    <title>New Bourne Motors</title>
+
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+    <section>
+        <div class="nav-lg d-none d-lg-flex">
+            <div class="logo-top">
+                <img src="pic/white.png" class="logo-white" alt="logo">
+                <span class="text-top">Used Cars Specialist</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEADER -->
+    <section class="main-nav with-bg">
+        <div class="container">
+            <nav class="menu-lg">
+                <div class="side">
+                    <div class="side-mob search-triger d-flex d-lg-none">
+                        <button class="button-side-mob" data-bs-toggle="offcanvas" data-bs-target="#modal-search">
+                            <img src="pic/search-button.png" alt="search">
+                        </button>
+                    </div>
+                    <div class="menus d-none d-lg-flex">
+                        <div class="menu-item">
+                            <a href="home-page.html">HOME</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#">ABOUT</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="product-listing.html">USED CARS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="logo">
+                        <img src="pic/main_logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="side-mob menu-triger d-flex justify-content-end d-lg-none">
+                        <button class="button-side-mob open-menu"><img src="pic/list-button.png" alt="menu"></button>
+                    </div>
+                    <div class="menus d-none d-lg-flex">
+                        <div class="menu-item">
+                            <a href="product-listing.html">SEARCH</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#">SERVICES</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#">CONTACT</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- MENU MOBILE VER -->
+        <div class="menu-mobile">
+            <div class="header">
+                <div class="m-logo">
+                    <img src="pic/main_logo.png" alt="m-logo">
+                </div>
+                <div class="button-close-trigger">
+                    <button><img src="pic/close-button.png" alt=""></button>
+                </div>
+            </div>
+            <div class="body">
+                <div class="side-menus">
+                    <div class="item-wrapper">
+                        <a href="home-page.html" class="item">HOME</a>
+                    </div>
+                    <div class="item-wrapper">
+                        <a href="#" class="item">ABOUT</a>
+                    </div>
+                    <div class="item-wrapper">
+                        <a href="product-listing.html" class="item">USED CARS</a>
+                    </div>
+                    <div class="item-wrapper">
+                        <a href="product-listing.html" class="item">SEARCH</a>
+                    </div>
+                    <div class="item-wrapper">
+                        <a href="#" class="item">SERVICE</a>
+                    </div>
+                    <div class="item-wrapper">
+                        <a href="#" class="item">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT DETAIL -->
+    <section class="detail py-3 py-lg-5">
+        <div class="container mb-5 d-lg-none">
+            <h2 class="section-title mb-3" style="color: #1A0802">RANGE ROVER</h2>
+            <span class="desc-text" style="color: #1A0802">19,998KM</span>
+        </div>
+        <div class="container">
+            <div class="row py-0 py-lg-5">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="left form-container">
+                        <h3 class="mb-5" style="color: #1A0802">REFINE SEARCH</h3>
+                        <form action="" class="form-refine">
+                            <div class="mb-3">
+                                <select name="make" id="make" class="form-select">
+                                    <option value="">MAKE</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select name="make" id="make" class="form-select">
+                                    <option value="">MODEL</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select name="make" id="make" class="form-select">
+                                    <option value="">BODY TYPE</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select name="make" id="make" class="form-select">
+                                    <option value="">YEAR</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select name="make" id="make" class="form-select">
+                                    <option value="">PRICE RANGE </option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" placeholder="KEYWORD" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <button class="button button-refine w-100">SEARCH</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-5 order-2 order-lg-1">
+                            <div class="detail-info py-5 py-lg-0">
+                                <div class="header-detail d-none d-lg-block">
+                                    <h3>RANGE ROVER </h3>
+                                    <h4 class="price">$229,950</h4>
+                                </div>
+                                <div class="details">
+                                    <div class="detail-item">
+                                        <span class="key">BODY TYPE</span>
+                                        <div class="val">SUV</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="key">TRANSMISSION</span>
+                                        <div class="val">Automatic</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="key">ENGINE</span>
+                                        <div class="val">4.4L DIESEL</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="key">COLOUR</span>
+                                        <div class="val">BYRON BLUE</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="key">ODOMETER</span>
+                                        <div class="val">19,998 KM</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="key">LOCATION</span>
+                                        <div class="val">
+                                            <img width="15" src="pic/icon-location.png" alt="" class="icon">
+                                            <span>VIC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 order-1 order-lg-2">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-3.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-3.png" />
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-3.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="pic/product-details-3.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex d-lg-none justify-content-between my-4">
+                                <div class="price-m">
+                                    <h4>$299.950</h4>
+                                </div>
+                                <a href="compare-page.html" class="compare-m">
+                                    <img width="20" src="pic/compare-logo-mini.png" alt="">
+                                    <span>Compare</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 py-5 d-flex justify-content-center order-3">
+                            <a href="enquiry-page.html" class="check-av">CHECK AVAILABILITY</a>
+                        </div>
+                        <div class="col-12 order-4">
+                            <div class="car-z">
+                                <a href="#" class="comp">
+                                    <img src="pic/vehicle-history.png" alt="h">
+                                    <div class="text-w">
+                                        <span>VEHICLE HISTORY</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="comp">
+                                    <img src="pic/car-inspect.png" alt="h">
+                                    <div class="text-w">
+                                        <span>CAR INSPECTION</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+     <section class="footer py-3 py-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo-footer">
+                        <img class="img-fluid" src="pic/white.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-2 mb-3 col-md-2 text-center">
+                            <a class="f-header" href="#">ABOUT</a>
+                        </div>
+                        <div class="col-3 mb-3 col-md-4 col-lg-3">
+                            <a class="f-header" href="#">CONTACT US</a>
+                            <div class="f-item">
+                                <div class="ic"><img src="pic/phone-logo.png" alt=""></div>
+                                <div class="if">
+                                    <div class="t">(03) 9391 5500</div>
+                                    <div class="b">417-419 Blackshaws</div>
+                                </div>
+                            </div>
+                            <div class="f-item">
+                                <div class="ic"><img src="pic/location-logo.png" alt=""></div>
+                                <div class="if">
+                                    <div class="t">Road, Altona North,</div>
+                                    <div class="b">VIC, 3025, Australia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3 col-md-2 col-lg-3">
+                            <a href="#" class="f-header">LINKS</a>
+                            <a href="#" class="f-item mb-1">
+                                <div class="ic"><img src="pic/ig-logo.png" alt=""></div>
+                                <div class="if">
+                                    <div class="t">Instagram</div>
+                                </div>
+                            </a>
+                            <a href="#" class="f-item mb-1">
+                                <div class="ic"><img src="pic/tw-logo.png" alt=""></div>
+                                <div class="if">
+                                    <div class="t">Twitter</div>
+                                </div>
+                            </a>
+                            <a href="#" class="f-item mb-1">
+                                <div class="ic"><img src="pic/fb-logo.png" alt=""></div>
+                                <div class="if">
+                                    <div class="t">Facebook</div>
+                                </div>
+                            </a>
+                            <a href="#" class="f-item mb-1">
+                                <div class="ic"><img src="pic/linkedin-logo.png" alt=""></div>
+                                <div class="if">
+                                    <div class="t">LinkedIn</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 mb-3 col-md-4 col-lg-4">
+                            <a href="#" class="f-header text-center">GENERAL INQUIRY</a>
+                            <a href="#" class="f-item d-block text-center">
+                                Terms & Condition
+                            </a>
+                            <a href="#" class="f-item d-block text-center">
+                                FAQ
+                            </a>
+                            <a href="#" class="f-item d-block text-center">
+                                Privacy
+                            </a>
+                            <a href="#" class="f-item d-block text-center">
+                                Careers
+                            </a>
+                            <a href="#" class="f-item d-block text-center">
+                                Shareholders
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="modal-search" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title nts" id="offcanvasExampleLabel">USED CARS</h5>
+          <button type="button" class="button-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form method="">
+                <div class="form-search-car">
+                    <div class="row">
+                        <div class="col-6 mb-1">
+                            <select name="make" id="make" class="form-select">
+                                <option value="">MAKE</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-1">
+                            <select name="model" id="model" class="form-select">
+                                <option value="">MODEL</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-1">
+                            <select name="body-type" id="body-type" class="form-select">
+                                <option value="">BODY TYPE</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-1">
+                            <select name="year" id="year" class="form-select">
+                                <option value="">YEAR</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-1">
+                            <select name="price-range" id="price-range" class="form-select">
+                                <option value="">PRICE RANGE</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-1">
+                            <input type="text" class="form-control" placeholder="KEYWORD">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-wrapper-sc">
+                    <a href="product-listing.html" class="button button-dark w-100 button-search-submit">SEARCH</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
